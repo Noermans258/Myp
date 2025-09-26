@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: gold;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button, .next-page {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, .next-page:hover {
+  background-color: #0056b3;
+}
+
+p, #output, #welcomeMessage {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.companny3.com</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="slideshow.html">Slideshow</a>
+      <a href="about.html">Tentang</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+    <h1 id="welcomeMessage">Galeri Foto</h1>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="assets/we5.jpg" alt="Foto 1" class="slide-image">
+      </div>
+      <div class="slide">
+        <img src="assets/we2.jpg" alt="Foto 2" class="slide-image">
+      </div>
+      <div class="slide">
+        <img src="assets/We3.jpg" alt="Foto 3" class="slide-image">
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">Sebelumnya</button>
+      <button class="next" onclick="changeSlide(1)">Berikutnya</button>
+    </div>
+    <button onclick="window.location.href='about.html'" class="next-page">Ke Halaman Tentang</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
