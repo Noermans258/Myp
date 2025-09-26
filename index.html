@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Kontak</h2>
+            <ul id="contact-list"></ul>
+        </div>
+        <div class="chat-area">
+            <div id="chat-header">Nama Kontak</div>
+            <div id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Ketik pesan...">
+                <button onclick="sendMessage()">Kirim</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
